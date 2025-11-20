@@ -70,11 +70,80 @@
   <section id="projects">
     <h2>Projects & Experiences</h2>
     
-    <!-- Six placeholder project cards -->
+        <!-- Six placeholder project cards -->
     <div class="project-card">
-      <h3>Project 1 Title</h3>
-      <p>[Placeholder description: What problem did you solve? What were your contributions?]</p>
+      <h3>Robotic De-Powdering System for Additive Manufacturing</h3>
+    
+      <!-- Introduction -->
+      <p>
+        In automotive manufacturing, many “green parts” require extremely high dimensional accuracy but are fragile and easily damaged. These parts are often produced using metal laser-sintering additive manufacturing. However, after printing, workers must manually excavate them from powder beds—a slow, labor-intensive process that exposes workers to metallic dust and risks part breakage.  
+        This project aims to develop a <strong>fully automated robotic de-powdering system</strong> that can safely locate, excavate, and grasp delicate 3D-printed parts without human involvement.
+      </p>
+    
+      <!-- Image Placeholder -->
+      <div style="margin: 1rem 0; text-align: center;">
+        <!-- Replace "project1_image.jpg" with your actual file -->
+        <img src="project1_image.jpg" alt="Robotic de-powdering system image" style="max-width: 100%; border-radius: 8px;">
+        <p style="font-size: 0.9rem; color: #555;">(Insert system prototype photo here)</p>
+      </div>
+    
+      <!-- Methods / Design -->
+      <h4>Methods & System Design</h4>
+      <p>
+        The system consists of two coordinated robotic arms:
+      </p>
+      <ul>
+        <li><strong>Primary Manipulator:</strong> A DENSO robotic arm controlled through ROS1, equipped with a RealSense 515 LiDAR for depth sensing. This arm performs precision grasping and part placement.</li>
+        <li><strong>Excavation Arm:</strong> A second robotic arm equipped with a vacuum tool that levels the powder bed and exposes deeper layers of parts.</li>
+      </ul>
+      <p>
+        After each layer of parts is removed, the LiDAR captures a 3D point cloud of the uneven powder surface. A custom <strong>vacuum-based path planning algorithm</strong> computes the trajectory needed to flatten the surface, enabling consistent multi-layer excavation.
+      </p>
+      <p>
+        I designed and improved a modular gripping mechanism in <strong>Fusion 360</strong> to protect fragile parts during grasping while supporting quick configuration changes.
+      </p>
+    
+      <!-- Video Placeholder -->
+      <div style="margin: 1rem 0; text-align: center;">
+        <!-- Replace with YouTube embed or local MP4 -->
+        <!-- Example YouTube embed: 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+        -->
+        <p style="font-size: 0.9rem; color: #555;">(Video demo placeholder — insert YouTube embed or MP4 here)</p>
+      </div>
+    
+      <!-- Results -->
+      <h4>Results</h4>
+      <p>
+        The prototype system successfully automated the de-powdering process for multi-layer powder beds. Key achievements include:
+      </p>
+      <ul>
+        <li>Accurate part localization through LiDAR depth sensing</li>
+        <li>Reliable, damage-free grasping of fragile components</li>
+        <li>Layer-by-layer excavation with automated powder smoothing</li>
+        <li>Reduced manual labor and minimized worker exposure to metallic dust</li>
+      </ul>
+    
+      <!-- Evaluation -->
+      <h4>Evaluation</h4>
+      <p>
+        The system demonstrated strong effectiveness in improving safety and consistency. While extremely fine powder adhesion remains a challenge, the modular gripper and sensing workflow showed strong potential for industrial adoption. Future improvements include higher-resolution sensing and learning-based excavation strategies.
+      </p>
+    
+      <!-- Your Role -->
+      <h4>My Contribution</h4>
+      <p>
+        As a Research Assistant in CERLab, I contributed:
+      </p>
+      <ul>
+        <li>Developing the robotic gripping system using ROS1</li>
+        <li>Implementing the vacuum-based path-planning algorithm</li>
+        <li>Integrating the DENSO arm with RealSense 515 LiDAR</li>
+        <li>Designing and improving gripper mechanisms in Fusion 360</li>
+        <li>Conducting system tests and performance evaluations</li>
+      </ul>
     </div>
+
     <div class="project-card">
       <h3>Project 2 Title</h3>
       <p>[Placeholder description]</p>
@@ -117,3 +186,4 @@
   </footer>
 </body>
 </html>
+
